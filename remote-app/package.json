@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview --port 5001",
-    "serve": "yarn vite build && yarn preview"
+    "preview": "vite preview --port 3001",
+    "serve": "vite build && vite preview --port 3001"
   },
   "dependencies": {
     "react": "^18.2.0",

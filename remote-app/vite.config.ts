@@ -21,9 +21,9 @@ export default defineConfig({
     cssCodeSplit: false,
   },
   server: {
-    port: 5001,
+    port: 3001,
     strictPort: true,
     cors: true,
-    origin: "http://localhost:5001"
+    origin: "http://localhost:3001",
   },
 });

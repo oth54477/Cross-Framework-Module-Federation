@@ -1,41 +1,41 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import federation from '@originjs/vite-plugin-federation'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import federation from "@originjs/vite-plugin-federation";
 
 export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'host_app',
+      name: "host_app",
       remotes: {
-        remote_app: 'http://localhost:5001/assets/remoteEntry.js',
+        remote_app: "http://localhost:3001/assets/remoteEntry.js",
         remote_vue: {
-          external: 'http://localhost:5002/remoteEntry.js',
-          format: 'var',
-          from: 'webpack'
-        }
+          external: "http://localhost:3002/remoteEntry.js",
+          format: "var",
+          from: "webpack",
+        },
       },
       shared: {
-        react: { 
+        react: {
           singleton: true,
-          requiredVersion: '^18.2.0'
+          requiredVersion: "^18.2.0",
         },
-        'react-dom': {
+        "react-dom": {
           singleton: true,
-          requiredVersion: '^18.2.0'
-        }
-      }
-    })
+          requiredVersion: "^18.2.0",
+        },
+      },
+    }),
   ],
   build: {
     modulePreload: false,
-    target: 'esnext',
+    target: "esnext",
     minify: false,
-    cssCodeSplit: false
+    cssCodeSplit: false,
   },
   server: {
-    port: 5000,
+    port: 3000,
     strictPort: true,
-    cors: true
-  }
-})
+    cors: true,
+  },
+});
