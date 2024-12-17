@@ -1,5 +1,14 @@
 # Cross-Framework Module Federation
 
+## 실행 방법
+- host-app, remote-app, remote-vue-new 를 실행합니다.
+- host-app
+  - yarn; yarn dev;
+- remote-app
+  - yarn; yarn dev;
+- remote-vue-new
+  - yarn; yarn serve;
+  
 ## 개발 배경
 ### 현재 상황
 - Vue3 기반의 대규모 마이크로프론트엔드 아키텍처 운영 중
