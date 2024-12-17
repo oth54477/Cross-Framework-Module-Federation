@@ -1,7 +1,7 @@
 # Cross-Framework Module Federation
 
 ## 실행 방법
-- host-app, remote-app, remote-vue-new 를 실행합니다.
+`host-app, remote-app, remote-vue-new 를 실행합니다.`
 - host-app
   - yarn; yarn dev;
 - remote-app
