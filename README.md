@@ -5,7 +5,7 @@
 - host-app
   - yarn; yarn dev;
 - remote-app
-  - yarn; yarn dev;
+  - yarn; yarn build; yarn preview;
 - remote-vue-new
   - yarn; yarn serve;
   
